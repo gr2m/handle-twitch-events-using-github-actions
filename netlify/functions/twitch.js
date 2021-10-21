@@ -101,7 +101,7 @@ exports.handler = async function handler(event, context) {
 
   await octokit.request("POST /repos/{owner}/{repo}/dispatches", {
     owner: "gr2m",
-    repo: "helpdesk",
+    repo: "handle-twitch-events-using-github-actions",
     event_type: "twitch",
     client_payload: {
       type,
